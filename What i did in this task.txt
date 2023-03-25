@@ -1,0 +1,40 @@
+1. Removed unused variables (ClassificationLevel.CONFIDENTIAL; ExperimentalTypes: LIFTING_BODY, HYPERSONIC; 
+2. renamed experimentalPlane class to ExperimentalPlane.
+
+3. Renamed 'Planes' package to 'planes'
+4. Removed overrides of equals() and hashCode() for ExperimentalPlane because they don't change anything
+5. changed statement for new ExperimentalPlane creation to match the constructor;
+
+6. remove type from experimentalPlane 
+7. removed comments from MyPlane
+8. MyPlane - not specific enough naming
+9. removed MyPlane class because it's not used
+10. PassengerPlane - removed comments
+11. Plane - abstract before public
+12. Plane.getMS() - not specific enough naming; changed to Plane.getMaxSpeed()
+13. Plane.Get_Max_Flight_Distance() - changed to Plane.getMaxFlightDistance() 
+14. Plane.getMinLoadCapacity() - changed to Plane.getMaxLoadCapacity() because it returns maxLoadCapacity.
+Also removed  int result = this.maxLoadCapacity; line.
+
+15. Airport - left comments at the top because the look like copyright/license. Deleted all others.
+16. renamed Airport.getPasPl() to Airport.getPassengerPlanes(). 
+Also refactored for and if statements from one line to muptiple to be more readable.
+17. Airport.getMilitaryPlanes() - deleted comments; deleted else statement cause it does nothing 
+18. Airport.getTransportMilitaryPlanes() - added indents for 'for' and 'if'.
+19. Removed unused sortByMaxFlightDistance() and sortByMaxSpeed() methods.
+20. Removed unused print() method.
+21. Substiteted List<? extends Plane> with List<Plane>
+
+22. Runner: removed everything from main because it's not needed (mostly system.out statements)
+
+23. Cleaned the 'AirportTest' class from all 'for', 'if' statements, refactored to methods instead.
+24. in AirportTest.testGetTransportMilitaryPlanes() renamed flag to isTransportMilitaryPlane
+25. removed system.out from AirportTest.testGetPassengerPlaneWithMaxCapacity
+26. renamed test3 to testSortAirportPlanes
+27. testHasAtLeastOneBomberInMilitaryPlanes() - renamed 'flag' to 'hasBombers' refactored Assert.fail to Assert.assertTrue
+28. Moved 'Airport airport = new Airport(planes);' outside every method.
+29. Removed ExperimentalTypes class (not used).
+
+
+
+ 
